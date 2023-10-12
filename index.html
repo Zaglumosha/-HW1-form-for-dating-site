@@ -18,34 +18,42 @@
       <form class="form" name="Регистрация" method="post" >
 
         <div class="tip">
-          <label for="email"><p>Логин</p></label>
-          <input type="email" id="email" pattern=".+@globex\.com" size="40" required />
-        </div>
-          
-        <div class="tip">  
-          <label for="pass"><p>Пароль(не менее 8 символов)</p></label>
-          <input id="pass" type="password" name="password" minlength="8" required />
+          <p>Логин</p>
+          <label for="email"></label>
+          <input type="email" id="email" pattern=".+@globex\.com" size="40"  
+          required />
+        </div> 
+
+        <div class="tip">
+          <p>Пароль(не менее 8 символов)</p>  
+          <label for="pass"></label>
+          <input id="pass" type="password" name="password" minlength="8" 
+          required />
         </div>
 
         <div class="tip">
-          <label for="avatar"><p>Выберете фото для вашего профиля:</p></label>
-          <img src="./icon/user.svg" weight="25" height="25">
+          <p>Выберете фото для вашего профиля:</p>
+          <label for="avatar"></label>
+          <img src="./icon/user.svg" alt="иконка пользователя" wight="25" height="25">
           <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
         </div>
-        
+
         <div class="tip">
-          <label for="username"><p>Как вас зовут?</p></label>
-          <input type="text" id="username" name="username" value="Имя" namesize="40" />    
-          <input type="text" id="username" name="secondusername" value="Фамилия" size="40" /> 
+          <p>Как вас зовут?</p>
+          <label for="firstname"></label>
+          <input type="text" id="firstname" name="firstusername" value="Имя" namesize="40" />
+          <label for="secondname"></label>    
+          <input type="text" id="secondname" name="secondusername" value="Фамилия" size="40" /> 
         </div>
 
         <div class="tip">
-          <label for="birthday"><p>Дата вашего рождения</p></label> 
+          <p>Дата вашего рождения</p>
+          <label for="birthday"></label> 
           <input type="date" id="birthday" name="birthday" />
         </div>
 
         <div class="tip">
-          <label for="Country-of-residence"><p>Выберете страну проживания</p></label>
+          <label for="Country-of-residence">Выберете страну проживания</label>
           <select name="country" id="Country-of-residence">
             <option value="">Пожалуйста, выберете вариант</option>
             <option value="Russia">Россия</option>
@@ -59,7 +67,8 @@
         </div>
 
         <div class="tip"> 
-          <legend><p>Кого вы ищите?</p></legend>
+          <p>Кого вы ищите?</p>
+          <legend></legend>
           <input type="radio" id="man" name="sex" value="man" />
           <label for="man">Мужчину</label>
         </div>
@@ -70,14 +79,17 @@
         </div>
 
         <div class="tip">
-          <label for="age"><p>Какой возраст вас интересует?:</p></label>
-          От <input type="number" id="age" name="mininmum" min="18" max="100" />
-          До <input type="number" id="age" name="maximum" min="18" max="100" />
+          <p>Какой возраст вас интересует?:</p>
+          <label for="minage"></label>
+          От <input type="number" id="minage" name="mininmum" min="18" max="100" />
+          <label for="maxage"></label>
+          До <input type="number" id="maxage" name="maximum" min="18" max="100" />
         </div>
 
         <div class="tip">
-          <legend><p>Чем вы увлекаетесь?:</p></legend>
-
+         <fieldset>
+          <legend>Чем вы увлекаетесь?:</legend>
+         
           <div>
             <input type="checkbox" id="sport" name="Спорт"  />
             <label for="sport">Спорт</label>
@@ -107,7 +119,8 @@
             <input type="checkbox" id="films" name="Фильмы" />
             <label for="films">Смотрю фильмы</label>
           </div>
-
+          
+         </fieldset>
         </div>
 
         <div class="tip">
@@ -122,10 +135,13 @@
           <p><input type="button" value="sign up"  /></p>
         </div>
 
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8o21WklzIOc?si=xn04U7tJf0jKXbsD" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        <iframe class="video" width="560" height="315" 
+        src="https://www.youtube.com/embed/8o21WklzIOc?si=xn04U7tJf0jKXbsD" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; 
           picture-in-picture; web-share" allowfullscreen>
         </iframe>
       </form>
     </body>
-</html>
+
+  </html>
