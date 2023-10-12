@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>Form for a dating site</title>
+      <link
+        rel="icon"
+        href="./icon/heart.svg"
+      />
+      <link
+        rel="stylesheet"
+        href="./css/style.css"
+      />
+    </head>
+
+    <body>
+      <form class="form" name="Регистрация" method="post" >
+
+        <div class="tip">
+          <label for="email"><p>Логин</p></label>
+          <input type="email" id="email" pattern=".+@globex\.com" size="40" required />
+        </div>
+          
+        <div class="tip">  
+          <label for="pass"><p>Пароль(не менее 8 символов)</p></label>
+          <input id="pass" type="password" name="password" minlength="8" required />
+        </div>
+
+        <div class="tip">
+          <label for="avatar"><p>Выберете фото для вашего профиля:</p></label>
+          <img src="./icon/user.svg" weight="25" height="25">
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        </div>
+        
+        <div class="tip">
+          <label for="username"><p>Как вас зовут?</p></label>
+          <input type="text" id="username" name="username" value="Имя" namesize="40" />    
+          <input type="text" id="username" name="secondusername" value="Фамилия" size="40" /> 
+        </div>
+
+        <div class="tip">
+          <label for="birthday"><p>Дата вашего рождения</p></label> 
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+
+        <div class="tip">
+          <label for="Country-of-residence"><p>Выберете страну проживания</p></label>
+          <select name="country" id="Country-of-residence">
+            <option value="">Пожалуйста, выберете вариант</option>
+            <option value="Russia">Россия</option>
+            <option value="USA">США</option>
+            <option value="Finland">Финляндия</option>
+            <option value="Norway">Норвегия</option>
+            <option value="Germany">Германия</option>
+            <option value="France">Франция</option>
+            <option value="Italy">Италия</option>
+          </select>
+        </div>
+
+        <div class="tip"> 
+          <legend><p>Кого вы ищите?</p></legend>
+          <input type="radio" id="man" name="sex" value="man" />
+          <label for="man">Мужчину</label>
+        </div>
+
+        <div class="tip">
+          <input type="radio" id="woman" name="sex" value="woman" />
+          <label for="woman">Женщину</label>
+        </div>
+
+        <div class="tip">
+          <label for="age"><p>Какой возраст вас интересует?:</p></label>
+          От <input type="number" id="age" name="mininmum" min="18" max="100" />
+          До <input type="number" id="age" name="maximum" min="18" max="100" />
+        </div>
+
+        <div class="tip">
+          <legend><p>Чем вы увлекаетесь?:</p></legend>
+
+          <div>
+            <input type="checkbox" id="sport" name="Спорт"  />
+            <label for="sport">Спорт</label>
+          </div>
+        
+          <div>
+            <input type="checkbox" id="dance" name="Танцы" />
+            <label for="dance">Танцы</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="drow" name="Живопись" />
+            <label for="drow">Живопись</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="read" name="Читаю" />
+            <label for="read">Читаю</label>
+          </div>
+         
+          <div>
+            <input type="checkbox" id="music" name="музыка" />
+            <label for="music">Занимаюсь музыкой</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="films" name="Фильмы" />
+            <label for="films">Смотрю фильмы</label>
+          </div>
+
+        </div>
+
+        <div class="tip">
+          <p>Выберете цвет вашей анкеты:</p>
+          <div>
+            <input type="color" id="body" name="fon" value="#717FEA" />
+            <label for="body">Фон</label>
+          </div>
+        </div>
+
+        <div class="button">
+          <p><input type="button" value="sign up"  /></p>
+        </div>
+
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8o21WklzIOc?si=xn04U7tJf0jKXbsD" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+      </form>
+    </body>
+</html>
