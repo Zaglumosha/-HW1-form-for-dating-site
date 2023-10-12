@@ -1,0 +1,20 @@
+body {
+  min-width: 850px;
+}
+
+.form{
+  text-align: center;
+  border: rgb(203, 127, 234,0.55) 10px double;
+  background-color: rgb(203,127,234,0.35)
+}
+
+.tip{
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 25px;  
+}
+
+.button{
+  width: auto;
+  height: auto;   
+}
