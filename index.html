@@ -18,33 +18,41 @@
       <form class="form" name="Регистрация" method="post" >
 
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="email"><p>Логин</p></label>
           <input type="email" id="email" pattern=".+@globex\.com" size="40" required />
         </div>
-          
-        <div class="tip">  
+
+        <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="pass"><p>Пароль(не менее 8 символов)</p></label>
           <input id="pass" type="password" name="password" minlength="8" required />
         </div>
 
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="avatar"><p>Выберете фото для вашего профиля:</p></label>
+          <!-- Если известно что из себя представляет картинка, то надо всегда указывать аттрибут alt + не существует аттрибут weight -->
           <img src="./icon/user.svg" weight="25" height="25">
           <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
         </div>
-        
+
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="username"><p>Как вас зовут?</p></label>
-          <input type="text" id="username" name="username" value="Имя" namesize="40" />    
+          <!--Id должен быть уникальным-->
+          <input type="text" id="username" name="username" value="Имя" namesize="40" />
           <input type="text" id="username" name="secondusername" value="Фамилия" size="40" /> 
         </div>
 
         <div class="tip">
-          <label for="birthday"><p>Дата вашего рождения</p></label> 
+          <!-- Тег p нельзя использовать внутри этого тега-->
+          <label for="birthday"><p>Дата вашего рождения</p></label>
           <input type="date" id="birthday" name="birthday" />
         </div>
 
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="Country-of-residence"><p>Выберете страну проживания</p></label>
           <select name="country" id="Country-of-residence">
             <option value="">Пожалуйста, выберете вариант</option>
@@ -58,7 +66,8 @@
           </select>
         </div>
 
-        <div class="tip"> 
+        <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега + legend должен находится внутри fieldset-->
           <legend><p>Кого вы ищите?</p></legend>
           <input type="radio" id="man" name="sex" value="man" />
           <label for="man">Мужчину</label>
@@ -70,19 +79,22 @@
         </div>
 
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега-->
           <label for="age"><p>Какой возраст вас интересует?:</p></label>
           От <input type="number" id="age" name="mininmum" min="18" max="100" />
+          <!--Id должен быть уникальным-->
           До <input type="number" id="age" name="maximum" min="18" max="100" />
         </div>
 
         <div class="tip">
+          <!-- Тег p нельзя использовать внутри этого тега + legend должен находится внутри fieldset-->
           <legend><p>Чем вы увлекаетесь?:</p></legend>
 
           <div>
             <input type="checkbox" id="sport" name="Спорт"  />
             <label for="sport">Спорт</label>
           </div>
-        
+
           <div>
             <input type="checkbox" id="dance" name="Танцы" />
             <label for="dance">Танцы</label>
@@ -97,7 +109,7 @@
             <input type="checkbox" id="read" name="Читаю" />
             <label for="read">Читаю</label>
           </div>
-         
+
           <div>
             <input type="checkbox" id="music" name="музыка" />
             <label for="music">Занимаюсь музыкой</label>
@@ -122,8 +134,8 @@
           <p><input type="button" value="sign up"  /></p>
         </div>
 
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8o21WklzIOc?si=xn04U7tJf0jKXbsD" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8o21WklzIOc?si=xn04U7tJf0jKXbsD"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
           picture-in-picture; web-share" allowfullscreen>
         </iframe>
       </form>
